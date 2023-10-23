@@ -3,6 +3,13 @@ import pandas as pd
 import torch
 import numpy as np
 
+torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if torch.cuda.is_available():
+    # Obtiene el dispositivo actual
+    device = torch.cuda.current_device()
+    print(f'Estás utilizando CUDA en la GPU {device}')
+else:
+    print('CUDA no está disponible. El código se está ejecutando en la CPU.')
 class PPOAgent:
     def __init__(self, state_dim, action_dim,  learning_rate=0.001, alpha=0.99, epsilon=0.1):
         self.policy_net = torch.nn.Sequential(
