@@ -55,3 +55,12 @@ Listo! Ya podemos ejecutar los notebooks.
 Los notebooks están preparados para ejecutarse tanto desde localhost, como desde Google Colab.
 En general, las simulaciones de estos notebooks se pueden ejecutar sin problemas desde localhost, ya que no demandan demasiados recursos computacionales (excepto si se ejecutan entrenamientos completos en entornos muy complejos, como en los de Atari).
 Algunas características sólo están disponibles en localhost, como las animaciones de los agentes en los entornos.
+
+#### Practico 1
+
+[lab_1_intro_rl](lab_1_intro_rl.ipynb)
+
+#### Practico 2
+
+[lab_2_stable_baselines](lab_2_stable_baselines.ipynb)
+[Doom_ppo](doom.ipynb):
